@@ -247,7 +247,7 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>xfce4-screenshooter</command>
+        <command>gyazo</command>
       </action>
     </keybind>
     <keybind key="A-Print">
@@ -363,13 +363,13 @@
         <command>xscreensaver-command -lock</command>
       </action>
     </keybind>
-    <keybind key="W-e">
+    <keybind key="W-a">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
           <name>Editor</name>
         </startupnotify>
-        <command>geany</command>
+        <command>gvim</command>
       </action>
     </keybind>
     <keybind key="W-m">
