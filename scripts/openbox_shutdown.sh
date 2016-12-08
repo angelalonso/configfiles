@@ -12,5 +12,5 @@ case $? in
 4)
   systemctl reboot;;
 5)
-  systemctl poewroff;;
+  systemctl poweroff;;
 esac
