@@ -5,5 +5,19 @@ curl -s https://packagecloud.io/install/repositories/gyazo/gyazo-for-linux/scrip
 sudo apt-get install gyazo
 
 #### TBD
--
-- MAYBE remove dolphin nautilus
+- win + c -> chromium
+  - install chromium
+- win + z -> zim
+  - install zim
+  - autoupdate from dropbox
+- win + p -> keepassx
+  - install keepassx
+- win +s -> Franz
+  - install Franz
+- start, reboot, hibernate...
+  urukrama
+- tile up, down, left right
+- move to desktop 1 2 3...
+- desktops in vertical
+- MAYBE
+  remove dolphin nautilus
