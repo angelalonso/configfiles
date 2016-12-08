@@ -1,4 +1,7 @@
-apt-get install thunar scrot
+apt-get install thunar scrot gmessage
+
+- start, reboot, hibernate...
+  install scripts
 
 - install gyazo
 curl -s https://packagecloud.io/install/repositories/gyazo/gyazo-for-linux/script.deb.sh | sudo bash
@@ -24,8 +27,6 @@ autoupdate from dropbox
 - install zim
 autoupdate from dropbox
 
-- start, reboot, hibernate...
-  urukrama
 - sound control keys
 - tile up, down, left right
 - move to desktop 1 2 3...
