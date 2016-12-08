@@ -1,7 +1,8 @@
 #/bin/bash
-
 FOLDER="$HOME/scripts"
 GITFOLDER="$HOME/configfiles/scripts"
+
+install_dir(){
 if [ -e $FOLDER ]; then
   echo "exists"
   mv $FOLDER $FOLDER.bck
@@ -10,5 +11,6 @@ else
 fi
 
 ln -s $GITFOLDER $FOLDER
+}
 
-
+install_dir

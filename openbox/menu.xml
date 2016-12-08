@@ -374,7 +374,7 @@
 		</item>
 		<item label="Exit">
 			<action name="Execute">
-        <execute>/home/aaf/scripts/cbpp-exit</execute>
+        <execute>cbpp-exit</execute>
 			</action>
 		</item>
 	</menu>
