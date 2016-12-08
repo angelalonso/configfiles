@@ -4,20 +4,27 @@ apt-get install thunar scrot
 curl -s https://packagecloud.io/install/repositories/gyazo/gyazo-for-linux/script.deb.sh | sudo bash
 sudo apt-get install gyazo
 
-#### TBD
-- win + c -> chromium
-  - install chromium
-- win + z -> zim
-  - install zim
-  - autoupdate from dropbox
-- win + p -> keepassx
-  - install keepassx
-- win +s -> Franz
-  - install Franz
+- install franz
+  - check version at http://meetfranz.com/#download
+mkdir ~/Franz && cd ~/Franz
+wget https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz
+tar zxvf Franz-linux-x64-4.0.4.tgz
+
+
+## TBD
+
+- install keepassx
+sudo ln -s /usr/bin/keepassx /usr/bin/keepass
+autoupdate from dropbox
+
+- install zim
+autoupdate from dropbox
+
 - start, reboot, hibernate...
   urukrama
 - tile up, down, left right
 - move to desktop 1 2 3...
 - desktops in vertical
-- MAYBE
+
+## MAYBE
   remove dolphin nautilus
