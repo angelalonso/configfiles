@@ -20,9 +20,6 @@
 ## GNOME PolicyKit and Keyring
 eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
 
-## Set root window colour
-hsetroot -solid "#2E3436" &
-
 ## Group start:
 ## 1. nitrogen - restores wallpaper
 ## 2. compositor - start
@@ -39,7 +36,7 @@ tint2 \
 (sleep 2s && pnmixer) &
 
 ## Start nm-applet for systray
-nm-applet &
+#nm-applet &
 
 ## Volume keys daemon
 xfce4-volumed &
