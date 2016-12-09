@@ -121,15 +121,11 @@
     <number>3</number>
     <firstdesk>1</firstdesk>
     <names>
-      <!-- set names up here if you want to, like this:
-      <name>desktop 1</name>
-      <name>desktop 2</name>
-      -->
       <name>1</name>
       <name>2</name>
       <name>3</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>400</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
          desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -237,11 +233,6 @@
         <command>openbox_shutdown.sh</command>
       </action>
     </keybind>
-    <keybind key="XF86PowerOff">
-      <action name="Execute">
-        <command>openbox_shutdown.sh</command>
-      </action>
-    </keybind>
     <keybind key="W-F1">
       <action name="GoToDesktop">
         <to>1</to>
@@ -255,11 +246,6 @@
     <keybind key="W-F3">
       <action name="GoToDesktop">
         <to>3</to>
-      </action>
-    </keybind>
-    <keybind key="W-F4">
-      <action name="GoToDesktop">
-        <to>4</to>
       </action>
     </keybind>
     <keybind key="W-d">
