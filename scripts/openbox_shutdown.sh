@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gmessage "Are you sure you want to shut down your computer?" -center -title "Take action" -font "Sans bold 10" -default "Cancel" -buttons "_Cancel":1,"_Log out":2,"_Hibernate-suspend":3,"_Reboot":4,"_Shut down":5 >/dev/null
+gmessage "Are you sure you want to shut down your computer?" -center -title "Take action" -font "Sans bold 10" -default "Cancel" -buttons "_Cancel":1,"_Log out":2,"Lock screen":3,"_Hibernate-suspend":4,"_Reboot":5,"_Shut down":6 >/dev/null
 
 case $? in
 1)
@@ -8,9 +8,11 @@ case $? in
 2)
   killall openbox;;
 3)
-  xscreensaver-command -lock;systemctl suspend;;
+  xscreensaver-command -lock;;
 4)
-  systemctl reboot;;
+  xscreensaver-command -lock;systemctl suspend;;
 5)
+  systemctl reboot;;
+6)
   systemctl poweroff;;
 esac
