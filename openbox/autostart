@@ -81,3 +81,4 @@ conky -q &
 
 screensaver -no-splash &
 
+hsetroot -solid "#000000" &

@@ -1,7 +1,7 @@
 apt-get install thunar scrot gmessage gnome-control-center gnome-alsamixer tint2 \
-vim-gtk arandr xscreensaver
+vim-gtk arandr xscreensaver hsetroot
 
-apt-get remove lxrandr
+apt-get remove lxrandr feh
 
 - start, reboot, hibernate...
   install scripts
