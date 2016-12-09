@@ -228,6 +228,12 @@
         <wrap>no</wrap>
       </action>
     </keybind>
+    <keybind key="XF86PowerOff">
+      <action name="Execute">
+        <command>openbox_shutdown.sh</command>
+      </action>
+    </keybind>
+
     <keybind key="W-F1">
       <action name="GoToDesktop">
         <to>1</to>
