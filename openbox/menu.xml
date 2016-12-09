@@ -374,7 +374,7 @@
 		</item>
 		<item label="Exit">
 			<action name="Execute">
-        <execute>/home/aaf/scripts/openbox_shutdown.sh</execute>
+        <execute>openbox_shutdown.sh</execute>
 			</action>
 		</item>
 	</menu>

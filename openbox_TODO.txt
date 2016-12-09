@@ -1,4 +1,5 @@
-apt-get install thunar scrot gmessage
+apt-get install thunar scrot gmessage gnome-control-center gnome-alsamixer tint2 \
+        vim-gtk
 
 - start, reboot, hibernate...
   install scripts
@@ -31,6 +32,7 @@ autoupdate from dropbox
 autoupdate from dropbox
 
 - sound control keys
+  http://askubuntu.com/questions/517078/any-volume-control-applet-for-openbox
 - tile up, down, left right
 - move to desktop 1 2 3...
 - desktops in vertical

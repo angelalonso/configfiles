@@ -13,4 +13,9 @@ fi
 ln -s $GITFOLDER $FOLDER
 }
 
+usr_bin_install(){
+sudo ln -s $GITFOLDER/openbox_shutdown.sh /usr/bin/openbox_shutdown.sh
+}
+
 install_dir
+usr_bin_install
