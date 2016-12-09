@@ -13,7 +13,10 @@ mkdir ~/Franz && cd ~/Franz
  - depending on system:
 wget https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz
 wget https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-ia32-4.0.4.tgz
+
 tar zxvf Franz-linux-x64-4.0.4.tgz
+sudo ln -s $HOME/Franz/Franz /usr/bin/Franz
+
 
 - keepass - depending on whether it's keepassx or keepass2:
 sudo ln -s /usr/bin/keepass2 /usr/bin/keepass
