@@ -1,5 +1,5 @@
 apt-get install thunar scrot gmessage gnome-control-center gnome-alsamixer tint2 \
-        vim-gtk lxrandr
+        vim-gtk lxrandr xscreensaver
 
 - start, reboot, hibernate...
   install scripts
@@ -36,6 +36,8 @@ autoupdate from dropbox
     alternative to kmix -> auto find USB, auto finds jack, shortcut to open it, fn keys
 - monitor config
     for now lxrandr -> too few options
+- lock
+    autostart xscreensaver
 - tile up, down, left right
 - move to desktop 1 2 3...
 - desktops in vertical

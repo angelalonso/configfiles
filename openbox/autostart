@@ -79,4 +79,5 @@ xset b off &
 ## Run the conky
 conky -q &
 
+screensaver -no-splash &
 
