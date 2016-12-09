@@ -25,12 +25,14 @@ eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
 ## 2. compositor - start
 ## 3. sleep - give compositor time to start
 ## 4. tint2 panel
-(\
-nitrogen --restore && \
-cbpp-compositor --start && \
-sleep 2s && \
-tint2 \
-) &
+#(\
+#nitrogen --restore && \
+#cbpp-compositor --start && \
+#sleep 2s && \
+#tint2 \
+#) &
+
+tint2 &
 
 ## Volume control for systray
 (sleep 2s && pnmixer) &
@@ -71,7 +73,7 @@ xset b off &
 
 ## cbpp-welcome - post-installation script, will not run in a live session and
 ## only runs once. Safe to remove.
-(sleep 10s && cbpp-welcome --firstrun) &
+#(sleep 10s && cbpp-welcome --firstrun) &
 
 ## Run the conky
 conky -q &

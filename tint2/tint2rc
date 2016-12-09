@@ -58,7 +58,7 @@ border_color = #888888 20
 
 # Panel
 panel_monitor = all
-panel_position = top center horizontal
+panel_position = bottom center horizontal
 panel_items = TSC
 panel_size = 100% 30
 panel_margin = 0 -1
@@ -72,7 +72,7 @@ panel_background_id = 1
 autohide = 1
 autohide_show_timeout = 0.3
 autohide_hide_timeout = 1.5
-autohide_height = 6
+autohide_height = 2
 strut_policy = follow_size
 
 # Taskbar
