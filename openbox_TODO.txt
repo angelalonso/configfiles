@@ -1,5 +1,5 @@
 apt-get install thunar scrot gmessage gnome-control-center gnome-alsamixer tint2 \
-        vim-gtk
+        vim-gtk lxrandr
 
 - start, reboot, hibernate...
   install scripts
@@ -33,6 +33,9 @@ autoupdate from dropbox
 
 - sound control keys
   http://askubuntu.com/questions/517078/any-volume-control-applet-for-openbox
+    alternative to kmix -> auto find USB, auto finds jack, shortcut to open it, fn keys
+- monitor config
+    for now lxrandr -> too few options
 - tile up, down, left right
 - move to desktop 1 2 3...
 - desktops in vertical
