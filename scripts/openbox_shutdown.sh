@@ -10,9 +10,9 @@ case $? in
 3)
   xscreensaver-command -lock;;
 4)
-  xscreensaver-command -lock;systemctl suspend;;
+  xscreensaver-command -lock;sudo systemctl suspend;;
 5)
-  systemctl reboot;;
+  sudo systemctl reboot;;
 6)
-  systemctl poweroff;;
+  sudo systemctl poweroff;;
 esac

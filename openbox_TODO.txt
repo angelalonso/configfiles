@@ -5,6 +5,9 @@ apt-get remove lxrandr feh
 
 - start, reboot, hibernate...
   install scripts
+  visudo:
+    aaf     ALL=NOPASSWD:/bin/systemctl
+
 
 - install gyazo
 curl -s https://packagecloud.io/install/repositories/gyazo/gyazo-for-linux/script.deb.sh | sudo bash
