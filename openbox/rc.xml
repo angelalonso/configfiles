@@ -176,49 +176,49 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
-    <keybind key="C-A-Left">
+    <keybind key="W-Left">
       <action name="GoToDesktop">
         <to>left</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Right">
+    <keybind key="W-Right">
       <action name="GoToDesktop">
         <to>right</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Up">
+    <keybind key="W-Up">
       <action name="GoToDesktop">
         <to>up</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Down">
+    <keybind key="W-A-Down">
       <action name="GoToDesktop">
         <to>down</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Left">
+    <keybind key="W-C-Left">
       <action name="SendToDesktop">
         <to>left</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Right">
+    <keybind key="W-C-Right">
       <action name="SendToDesktop">
         <to>right</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Up">
+    <keybind key="W-C-Up">
       <action name="SendToDesktop">
         <to>up</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Down">
+    <keybind key="W-C-Down">
       <action name="SendToDesktop">
         <to>down</to>
         <wrap>no</wrap>
@@ -306,22 +306,22 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
-    <keybind key="W-S-Right">
+    <keybind key="A-C-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
       </action>
     </keybind>
-    <keybind key="W-S-Left">
+    <keybind key="A-C-Left">
       <action name="DirectionalCycleWindows">
         <direction>left</direction>
       </action>
     </keybind>
-    <keybind key="W-S-Up">
+    <keybind key="A-C-Up">
       <action name="DirectionalCycleWindows">
         <direction>up</direction>
       </action>
     </keybind>
-    <keybind key="W-S-Down">
+    <keybind key="A-C-Down">
       <action name="DirectionalCycleWindows">
         <direction>down</direction>
       </action>
@@ -492,19 +492,19 @@
       </action>
     </keybind>
     <!-- Keybindings for window tiling -->
-    <keybind key="W-C-Left">    	# HalfLeftScreen
+    <keybind key="W-S-Left">    	# HalfLeftScreen
   	  <action name="UnmaximizeFull"/>
   	    <action name="MoveResizeTo"><x>0</x><y>0</y><height>100%</height><width>50%</width></action>
 	  </keybind>
-    <keybind key="W-C-Right">    	# HalfRightScreen
+    <keybind key="W-S-Right">    	# HalfRightScreen
   	  <action name="UnmaximizeFull"/>
   	    <action name="MoveResizeTo"><x>-0</x><y>0</y><height>100%</height><width>50%</width></action>
 	</keybind>
-    <keybind key="W-C-Up">    	# HalfUpperScreen
+    <keybind key="W-S-Up">    	# HalfUpperScreen
   	  <action name="UnmaximizeFull"/>
   	  <action name="MoveResizeTo"><x>0</x><y>0</y><width>100%</width><height>50%</height></action>
 	</keybind>
-    <keybind key="W-C-Down">    	# HalfLowerScreen
+    <keybind key="W-S-Down">    	# HalfLowerScreen
   	  <action name="UnmaximizeFull"/>
   	  <action name="MoveResizeTo"><x>0</x><y>-0</y><width>100%</width><height>50%</height></action>
 	</keybind>
