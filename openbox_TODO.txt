@@ -1,5 +1,5 @@
 apt-get install thunar scrot gmessage gnome-control-center gnome-alsamixer tint2 \
-vim-gtk arandr xscreensaver hsetroot
+vim-gtk arandr xscreensaver hsetroot dmenu
 pnmixer xfce4-volumed mate-power-manager conky clipit
 
 apt-get remove lxrandr feh
