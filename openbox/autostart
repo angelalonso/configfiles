@@ -19,6 +19,9 @@
 
 ## GNOME PolicyKit and Keyring
 eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
+# This goes int .zshrc, otherwise ssh-agent reamins as the SSH_AUTH_SOCK
+#SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+#export SSH_AUTH_SOCK
 
 ## Group start:
 ## 1. nitrogen - restores wallpaper

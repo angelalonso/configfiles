@@ -1,8 +1,14 @@
 apt-get install thunar scrot gmessage gnome-control-center gnome-alsamixer tint2 \
-vim-gtk arandr xscreensaver hsetroot dmenu
-pnmixer xfce4-volumed mate-power-manager conky clipit
+vim-gtk arandr xscreensaver hsetroot dmenu \
+pnmixer xfce4-volumed mate-power-manager conky clipit \
+seahorse lightdm gnome-keyring ssh-askpass libpam-ssh
 
 apt-get remove lxrandr feh
+
+- autostart ssh keys
+  - check:
+   only runs: /usr/bin/gnome-keyring-daemon --daemonize --login
+  pam, kwalletd, SSH_AUTH_SOCK, lightdm
 
 - start, reboot, hibernate...
   install scripts
@@ -44,9 +50,8 @@ autoupdate from dropbox
     for now lxrandr -> too few options
 - lock
     autostart xscreensaver
-- tile up, down, left right
-- move to desktop 1 2 3...
 - desktops in vertical
 
 ## MAYBE
   remove dolphin nautilus
+  remove all things kde

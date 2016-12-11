@@ -16,5 +16,13 @@ mv $RCFILE $RCFILE.bck
 ln -s $GITFOLDER/dmenu-bind.sh $RCFILE
 }
 
+zshrc(){
+RCFILE="$HOME/.zshrc"
+
+mv $RCFILE $RCFILE.bck
+ln -s $GITFOLDER/zshrc $RCFILE
+}
+
 conky
 dmenu
+zshrc
