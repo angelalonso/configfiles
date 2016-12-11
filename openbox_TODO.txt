@@ -9,6 +9,12 @@ apt-get remove lxrandr feh
   - check:
    only runs: /usr/bin/gnome-keyring-daemon --daemonize --login
   pam, kwalletd, SSH_AUTH_SOCK, lightdm
+  - .ssh/config:
+#angelalonso account
+Host github.com-angelalonso
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/afonseca...
 
 - start, reboot, hibernate...
   install scripts

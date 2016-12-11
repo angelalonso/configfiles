@@ -83,6 +83,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gop="cd ~/Software/foodpanda/puppet"
+alias goa="cd ~/Software/foodpanda/aws"
+alias got="cd ~/Software/foodpanda/tools"
 #
 # This does not go in openbox/autostart! otherwise ssh-agent remains as SSH_AUTH_SOCK
 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
