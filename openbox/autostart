@@ -40,6 +40,9 @@ tint2 &
 ## Volume control for systray
 (sleep 2s && pnmixer) &
 
+## bluetooth control for systray
+blueman-applet &
+
 ## Start nm-applet for systray
 #nm-applet &
 
@@ -48,6 +51,9 @@ xfce4-volumed &
 
 ## Enable power management
 mate-power-manager &
+
+## Start Clipboard manager
+(sleep 3s && clipit) &
 
 ## Start Thunar Daemon
 thunar --daemon &
@@ -59,9 +65,6 @@ fi
 
 ## Start xscreensaver
 xscreensaver -no-splash &
-
-## Start Clipboard manager
-(sleep 3s && clipit) &
 
 ## Set keyboard settings - 250 ms delay and 25 cps (characters per second) repeat rate.
 ## Adjust the values according to your preferances.
@@ -78,9 +81,10 @@ xset b off &
 ## only runs once. Safe to remove.
 #(sleep 10s && cbpp-welcome --firstrun) &
 
-## Run the conky
-conky -q &
-
 screensaver -no-splash &
 
 hsetroot -solid "#000000" &
+
+## Run the conky
+conky -q &
+

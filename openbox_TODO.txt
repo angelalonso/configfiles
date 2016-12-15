@@ -1,7 +1,8 @@
 apt-get install thunar scrot gmessage gnome-control-center gnome-alsamixer tint2 \
 vim-gtk arandr xscreensaver hsetroot dmenu \
 pnmixer xfce4-volumed mate-power-manager conky clipit \
-seahorse lightdm gnome-keyring ssh-askpass libpam-ssh
+seahorse lightdm gnome-keyring ssh-askpass libpam-ssh \
+blueman
 
 apt-get remove lxrandr feh
 
