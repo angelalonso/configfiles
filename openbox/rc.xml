@@ -403,9 +403,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Vim</name>
+          <name>Thunderbird</name>
         </startupnotify>
-        <command>x-terminal-emulator -e vim</command>
+        <command>thunderbird</command>
       </action>
     </keybind>
     <keybind key="W-c">
