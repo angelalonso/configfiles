@@ -35,6 +35,9 @@ eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
 #tint2 \
 #) &
 
+# Compose keys -> RCTRL + (n ~) = ñ
+setxkbmap  -option compose:rctrl &
+
 tint2 &
 
 ## Volume control for systray
