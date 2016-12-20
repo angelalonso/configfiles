@@ -47,7 +47,7 @@ tint2 &
 blueman-applet &
 
 ## Start nm-applet for systray
-#nm-applet &
+nm-applet &
 
 ## Volume keys daemon
 xfce4-volumed &
