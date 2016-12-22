@@ -40,7 +40,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>arch.blue</name>
+    <name>Nightmare</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -486,9 +486,21 @@
       </action>
     </keybind>
     <!-- Keybindings for window tiling -->
-    <keybind key="W-C-S-Up">    	# HalfLeftScreen
-  	  <action name="UnmaximizeFull"/>
-        <action name="MoveResizeTo"><height>100%</height><width>100%</width></action>
+    <keybind key="W-C-S-Up">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <height>100%</height>
+        <width>100%</width>
+      </action>
+    </keybind>
+    <keybind key="W-C-S-Left">
+      <action name="MoveToPrevMonitor">
+        <!-- move to previous monitor -->
+        <monitor>previous</monitor>
+      </action>
+    </keybind>
+    <keybind key="W-C-S-Right">    	# HalfLeftScreen
+  	  <action name="MoveToNextMonitor"><!-- move to next monitor --><monitor>next</monitor></action>
 	  </keybind>
     <keybind key="W-S-Left">    	# HalfLeftScreen
   	  <action name="UnmaximizeFull"/>

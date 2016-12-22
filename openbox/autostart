@@ -18,8 +18,9 @@
 ## Have fun & happy CrunchBangin'! :)
 
 ## GNOME PolicyKit and Keyring
-killall gnome-keyring-daemon
+killall gnome-keyring-daemon &
 eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
+#/usr/bin/gnome-keyring-daemon --daemonize --login
 SSH_AGENT_PID=$(pidof gnome-keyring-daemon)
 # This goes int .zshrc, otherwise ssh-agent reamins as the SSH_AUTH_SOCK
 #SSH_AUTH_SOCK=/run/user/1000/keyring/ssh

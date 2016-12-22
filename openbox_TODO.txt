@@ -47,17 +47,20 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
   - check:
    only runs: /usr/bin/gnome-keyring-daemon --daemonize --login
   pam, kwalletd, SSH_AUTH_SOCK, lightdm
+  - sudo vim /etc/pam.d/lightdm
+  auth optional pam_gnome_keyring.so
+  - remove /etc/xdg/autostart/gnome-keyring-*
+    User git
+    IdentityFile ~/.ssh/afonseca...
   - .ssh/config:
 #angelalonso account
 Host github.com-angelalonso
     HostName github.com
-    User git
-    IdentityFile ~/.ssh/afonseca...
+
 
 
 - start, reboot, hibernate...
   install scripts
- -- NEEDED?
   visudo:
     aaf     ALL=NOPASSWD:/bin/systemctl
 
