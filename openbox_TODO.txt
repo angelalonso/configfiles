@@ -1,10 +1,47 @@
-apt-get install thunar scrot gmessage gnome-control-center gnome-alsamixer tint2 \
+apt-get install \
+git terminator keepass2 zim chromium-browser encfs zsh
+
+openbox obconf
+thunar scrot gmessage gnome-control-center gnome-alsamixer tint2 \
 vim-gtk arandr xscreensaver hsetroot dmenu \
 pnmixer xfce4-volumed mate-power-manager conky clipit \
 seahorse lightdm gnome-keyring ssh-askpass libpam-ssh \
-blueman lxappearance
+blueman lxappearance \
 
 apt-get remove lxrandr feh
+
+- VIM
+sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev \
+    libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
+    libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
+    python3-dev ruby-dev lua5.1 liblua5.1-dev libperl-dev git
+
+sudo apt-get remove vim vim-runtime gvim vim-tiny vim-common vim-gui-common vim-nox
+
+Note: If you are using Python, your config directory might have a machine-specific name (e.g. config-3.5m-x86_64-linux-gnu). Check in /usr/lib/python[2/3/3.5] to find yours, and change the python-config-dir and/or python3-config-dir arguments accordingly
+
+cd ~ && git clone https://github.com/vim/vim.git && cd vim
+
+./configure --with-features=huge \
+            --enable-multibyte \
+            --enable-rubyinterp=yes \
+            --enable-pythoninterp=yes \
+            --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu \
+            --enable-python3interp=yes \
+            --with-python3-config-dir=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu \
+            --enable-perlinterp=yes \
+            --enable-luainterp=no \
+            --enable-gui=gtk2 --enable-cscope --prefix=/usr
+
+sudo apt-get install checkinstall
+cd ~/vim
+sudo checkinstall
+
+mkdir -p ~/.vim/bundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
 
 - autostart ssh keys
   - check:
@@ -17,15 +54,27 @@ Host github.com-angelalonso
     User git
     IdentityFile ~/.ssh/afonseca...
 
+
 - start, reboot, hibernate...
   install scripts
+ -- NEEDED?
   visudo:
     aaf     ALL=NOPASSWD:/bin/systemctl
 
 
+- install dropbox
+look it up under https://www.dropbox.com/de/install-linux
+
+
+- install skype
+sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+sudo dpkg --add-architecture i386
+sudo apt-get update && sudo apt-get install skype
+
 - install gyazo
 curl -s https://packagecloud.io/install/repositories/gyazo/gyazo-for-linux/script.deb.sh | sudo bash
 sudo apt-get install gyazo
+
 
 - install franz
   - check version at http://meetfranz.com/#download
@@ -57,7 +106,9 @@ autoupdate from dropbox
     for now lxrandr -> too few options
 - lock
     autostart xscreensaver
-- desktops in vertical
+
+- vim
+add vimrc to other configs to be copied over
 
 ## MAYBE
   remove dolphin nautilus
