@@ -1,7 +1,7 @@
 apt-get install \
-git terminator keepass2 zim chromium-browser encfs zsh
-
-openbox obconf
+git terminator keepass2 zim chromium-browser encfs zsh \
+puppet-lint \
+openbox obconf \
 thunar scrot gmessage gnome-control-center gnome-alsamixer tint2 \
 vim-gtk arandr xscreensaver hsetroot dmenu \
 pnmixer xfce4-volumed mate-power-manager conky clipit \
