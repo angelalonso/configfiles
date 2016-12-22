@@ -1,6 +1,6 @@
 apt-get install \
 git terminator keepass2 zim chromium-browser encfs zsh \
-puppet-lint \
+python-pip \
 openbox obconf \
 thunar scrot gmessage gnome-control-center gnome-alsamixer tint2 \
 vim-gtk arandr xscreensaver hsetroot dmenu \
@@ -90,6 +90,13 @@ sudo ln -s $HOME/Franz/Franz /usr/bin/Franz
 - keepass - depending on whether it's keepassx or keepass2:
 sudo ln -s /usr/bin/keepass2 /usr/bin/keepass
 sudo ln -s /usr/bin/keepassx /usr/bin/keepass
+
+
+- Foodpanda works
+sudo apt-get install puppet-lint fabric jq
+
+pip install boto
+sudo gem install rspec r10k hiera-eyaml puppet-lint
 
 ## TBD
 
