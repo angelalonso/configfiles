@@ -90,4 +90,5 @@ alias got="cd ~/Software/foodpanda/tools"
 # This does not go in openbox/autostart! otherwise ssh-agent remains as SSH_AUTH_SOCK
 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 export SSH_AUTH_SOCK
-
+SSH_AGENT_PID=$(pidof gnome-keyring-daemon)
+export SSH_AGENT_PID

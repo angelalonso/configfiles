@@ -1018,7 +1018,6 @@
       </position>
     </application>
     <application class="X-terminal-emulator" name="x-terminal-emulator" type="normal">
-      <decor>no</decor>
     </application>
   </applications>
 </openbox_config>
