@@ -18,7 +18,7 @@
 ## Have fun & happy CrunchBangin'! :)
 
 ## GNOME PolicyKit and Keyring
-killall gnome-keyring-daemon &
+killall gnome-keyring-daemon
 eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
 #/usr/bin/gnome-keyring-daemon --daemonize --login
 SSH_AGENT_PID=$(pidof gnome-keyring-daemon)
