@@ -101,6 +101,14 @@ sudo apt-get install puppet-lint fabric jq
 pip install boto
 sudo gem install rspec r10k hiera-eyaml puppet-lint
 
+mkdir ~/terraform && cd ~/terraform
+wget https://releases.hashicorp.com/terraform/0.8.2/terraform_0.8.2_linux_amd64.zip
+, or
+wget https://releases.hashicorp.com/terraform/0.8.2/terraform_0.8.2_linux_386.zip
+
+unzip terraform_0.8.2_linux_amd64.zip
+sudo ln -s /home/aaf/terraform/terraform /usr/bin/terraform
+
 ## TBD
 
 - keepass
