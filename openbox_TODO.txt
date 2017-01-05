@@ -1,6 +1,6 @@
 apt-get install \
 git terminator keepass2 zim chromium-browser encfs zsh \
-python-pip \
+python-pip expect \
 openbox obconf \
 thunar scrot gmessage gnome-control-center gnome-alsamixer tint2 \
 vim-gtk arandr xscreensaver hsetroot dmenu \
@@ -14,7 +14,7 @@ apt-get remove lxrandr feh
 sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev \
     libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
     libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
-    python3-dev ruby-dev lua5.1 liblua5.1-dev libperl-dev git
+    python3-dev ruby-dev lua5.1 liblua5.1-dev libperl-dev git cmake
 
 sudo apt-get remove vim vim-runtime gvim vim-tiny vim-common vim-gui-common vim-nox
 
@@ -41,6 +41,14 @@ mkdir -p ~/.vim/bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+
+cd ~
+mkdir ycm_build
+cd ycm_build
+cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+cmake --build . --target ycm_core
+
 
 
 - autostart ssh keys
