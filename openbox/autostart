@@ -95,4 +95,4 @@ hsetroot -solid "#000000" &
 ## Run the conky
 conky -q &
 
-
+seahorse &
