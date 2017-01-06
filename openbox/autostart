@@ -40,7 +40,9 @@ SSH_AGENT_PID=$(pidof gnome-keyring-daemon)
 
 # Compose keys -> RCTRL + (n ~) = ñ
 setxkbmap  -option compose:rctrl &
-xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+xmodmap ~/.xmodmap
+# tried and failed:
+# xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
 tint2 &
 

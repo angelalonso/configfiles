@@ -54,6 +54,11 @@ cd ycm_build
 cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 cmake --build . --target ycm_core
 
+# Caps into esc
+xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+xmodmap -pke > ~/.xmodmap
+xmodmap ~/.xmodmap
+
 
 
 - autostart ssh keys
