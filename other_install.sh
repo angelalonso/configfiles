@@ -23,6 +23,14 @@ mv $RCFILE $RCFILE.bck
 ln -s $GITFOLDER/zshrc $RCFILE
 }
 
+xmodmap(){
+RCFILE="$HOME/.Xmodmap"
+
+mv $RCFILE $RCFILE.bck
+ln -s $GITFOLDER/Xmodmap_mac_ctrl $RCFILE
+}
+
 conky
 dmenu
 zshrc
+xmodmap
