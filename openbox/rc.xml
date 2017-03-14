@@ -41,7 +41,7 @@
   </placement>
   <theme>
     <name>Nightmare</name>
-    <titleLayout>LIMC</titleLayout>
+    <titleLayout>CIML</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
       N: window icon
