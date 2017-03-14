@@ -233,21 +233,26 @@
         <command>openbox_shutdown.sh</command>
       </action>
     </keybind>
-    <keybind key="W-F1">
+    <keybind key="W-1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="W-F2">
+    <keybind key="W-2">
       <action name="GoToDesktop">
         <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="W-3">
+      <action name="GoToDesktop">
+        <to>3</to>
       </action>
     </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="A-F4">
+    <keybind key="C-f">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -271,7 +276,7 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
-    <keybind key="A-Tab">
+    <keybind key="C-Tab">
       <action name="NextWindow">
         <finalactions>
           <action name="Focus"/>
@@ -280,7 +285,7 @@
         </finalactions>
       </action>
     </keybind>
-    <keybind key="A-S-Tab">
+    <keybind key="C-S-Tab">
       <action name="PreviousWindow">
         <finalactions>
           <action name="Focus"/>
@@ -331,7 +336,7 @@
         <command>gmrun</command>
       </action>
     </keybind>
-    <keybind key="W-F3">
+    <keybind key="C-F3">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -340,7 +345,7 @@
         <command>~/.config/dmenu/dmenu-bind.sh</command>
       </action>
     </keybind>
-    <keybind key="W-l">
+    <keybind key="W-S-XF86PowerOff">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -387,7 +392,7 @@
       </action>
     </keybind>
     -->
-    <keybind key="W-space">
+    <keybind key="C-space">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
