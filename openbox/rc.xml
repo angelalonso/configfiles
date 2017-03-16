@@ -254,7 +254,7 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="C-f">
+    <keybind key="C-S-f">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
