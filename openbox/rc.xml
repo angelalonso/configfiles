@@ -200,6 +200,7 @@
         <wrap>no</wrap>
       </action>
     </keybind>
+    <!--
     <keybind key="W-C-Left">
       <action name="SendToDesktop">
         <to>left</to>
@@ -224,6 +225,7 @@
         <wrap>no</wrap>
       </action>
     </keybind>
+    -->
     <keybind key="XF86PowerOff">
       <action name="Execute">
         <startupnotify>
@@ -306,6 +308,7 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
+    <!--
     <keybind key="A-C-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
@@ -326,6 +329,7 @@
         <direction>down</direction>
       </action>
     </keybind>
+    -->
     <!-- Keybindings for running applications -->
     <keybind key="A-F2">
       <action name="Execute">
@@ -486,6 +490,7 @@
           <to>next</to>
         </action>
       </mousebind>
+      <!--
       <mousebind action="Click" button="C-A-Up">
         <action name="GoToDesktop">
           <to>previous</to>
@@ -496,6 +501,7 @@
           <to>next</to>
         </action>
       </mousebind>
+      -->
       <mousebind action="Click" button="A-S-Up">
         <action name="SendToDesktop">
           <to>previous</to>
